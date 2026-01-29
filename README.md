@@ -18,6 +18,12 @@ A simple Windows GUI tool to automatically download Steam Workshop items using *
 
 ---
 
+## Disclaimer
+
+- Sometimes you have to press download twice fo it to work
+
+---
+
 ## Requirements
 
 - **Python 3.11+** (for running the `.py` script)  
