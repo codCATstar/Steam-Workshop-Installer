@@ -34,15 +34,3 @@ A simple Windows GUI tool to automatically download Steam Workshop items using *
 4. Click **Download Mods**  
 5. SteamCMD will automatically download if needed, and the Workshop items will download  
 6. When finished, the folder containing the downloads will open automatically  
-
----
-
-## Installation
-
-### Option 1 — Using Python
-
-```bash
-git clone https://github.com/YourUsername/steamcmd-workshop-downloader.git
-cd steamcmd-workshop-downloader
-python -m pip install --upgrade pip
-python steamcmd_workshop_gui.py
