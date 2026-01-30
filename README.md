@@ -1,44 +1,89 @@
-# SteamCMD Workshop Downloader
-<img width="697" height="849" alt="Screenshot 2026-01-30 121413" src="https://github.com/user-attachments/assets/2db1819d-34dd-41b0-a1a1-b9497111567e" />
+SteamCMD Workshop Downloader
 
-A simple Windows GUI tool to automatically download Steam Workshop items using **SteamCMD**.
+A fully-featu<img width="1917" height="1006" alt="Screenshot 2026-01-30 123354" src="https://github.com/user-attachments/assets/99935010-efa1-4bd9-ad3a-2effd24f550c" />
+<img width="697" height="849" alt="Screenshot 2026-01-30 121413" src="https://github.com/user-attachments/assets/f31d4b39-9177-4d91-b34f-0c050b161f5e" />
+red GUI tool for downloading Steam Workshop mods using SteamCMD.
 
-![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
-![Windows](https://img.shields.io/badge/OS-Windows-lightgrey)
+This app allows you to easily download mods for any game using its Steam App ID and Workshop IDs, with support for dependencies, drag & drop, mod naming, and live terminal output.
 
----
+Features
 
-## Features
+Dark Mode UI – easy on the eyes for long download sessions.
 
-- Automatically **downloads and installs SteamCMD** if not present  
-- Download Workshop items for **any Steam game** using Game App ID and Workshop IDs  
-- **Progress bar** for SteamCMD download  
-- Automatically opens the **folder** containing downloaded Workshop items  
-- Automatically installs **Python `requests` module** if missing  
-- **User-friendly GUI** built with Tkinter  
+Drag & Drop Workshop IDs – quickly add multiple Workshop items.
 
-## Usage<img width="1917" height="1006" alt="Screenshot 2026-01-30 123354" src="https://github.com/user-attachments/assets/1032962e-6ecd-4d42-ba0c-0faf2d721cca" />
+Mod Naming – downloaded mods are automatically renamed to their Steam Workshop name.
 
----
+Dependency Detection – optional checkbox to download required dependencies.
 
-## Disclaimer
+Game Presets – save Game IDs for quick access later.
 
-- Sometimes you have to press download twice fo it to work
+Embedded Terminal Output – see SteamCMD logs live inside the program.
 
----
+Overall Progress Bar – shows total download progress across all mods.
 
-## Requirements
+Download Button Above Terminal – clean layout for easy access.
 
-- **Python 3.11+** (for running the `.py` script)  
-- **Windows 10/11**  
-- If using the compiled `.exe`, no Python installation is needed  
+Auto-Tiles to Left Half of Screen – convenient multitasking layout.
 
----
+Installation
+
+Download or clone this repository:
+
+git clone https://github.com/yourusername/steamcmd-workshop-downloader.git
 
 
-1. Run the script or executable  
-2. Enter the **Game App ID**  
-3. Enter **Workshop IDs** (one per line)  
-4. Click **Download Mods**  
-5. SteamCMD will automatically download if needed, and the Workshop items will download  
-6. When finished, the folder containing the downloads will open automatically  
+Ensure you have Python 3.10+ installed.
+
+Install required dependencies:
+
+pip install requests tkinterdnd2
+
+
+The program will also automatically download SteamCMD if not present.
+
+Usage
+
+Open the program:
+
+python steamcmd_workshop_gui.py
+
+
+Enter your Game App ID.
+
+Add one or more Workshop IDs (one per line, or drag & drop from browser).
+
+Check Download Dependencies if needed.
+
+Click Download Mods.
+
+The mods will be downloaded to:
+
+steamcmd/steamapps/workshop/content/<GameID>/
+
+
+Each mod folder is automatically renamed to the Steam Workshop name.
+
+Saving Game IDs
+
+When you download a game for the first time, you’ll be prompted to save the Game ID with a custom name. Saved games appear in the dropdown for future use.
+
+Building an Executable
+
+To create a Windows .exe:
+
+python -m PyInstaller --onefile --windowed --icon=steamcmd_icon.ico steamcmd_workshop_gui.py
+
+
+--onefile → single executable
+
+--windowed → GUI only, no console
+
+--icon → path to your .ico file
+
+The compiled executable will be in the dist/ folder.
+
+License
+
+This project is released under the MIT License.
+You may use, modify, and distribute freely.
