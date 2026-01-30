@@ -1,8 +1,7 @@
 SteamCMD Workshop Downloader
-
-A fully-featu<img width="1917" height="1006" alt="Screenshot 2026-01-30 123354" src="https://github.com/user-attachments/assets/99935010-efa1-4bd9-ad3a-2effd24f550c" />
+<img width="1917" height="1006" alt="Screenshot 2026-01-30 123354" src="https://github.com/user-attachments/assets/99935010-efa1-4bd9-ad3a-2effd24f550c" />
 <img width="697" height="849" alt="Screenshot 2026-01-30 121413" src="https://github.com/user-attachments/assets/f31d4b39-9177-4d91-b34f-0c050b161f5e" />
-red GUI tool for downloading Steam Workshop mods using SteamCMD.
+A fully-featured GUI tool for downloading Steam Workshop mods using SteamCMD.
 
 This app allows you to easily download mods for any game using its Steam App ID and Workshop IDs, with support for dependencies, drag & drop, mod naming, and live terminal output.
 
