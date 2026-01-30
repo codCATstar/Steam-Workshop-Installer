@@ -1,4 +1,5 @@
 # SteamCMD Workshop Downloader
+<img width="697" height="849" alt="Screenshot 2026-01-30 121413" src="https://github.com/user-attachments/assets/2db1819d-34dd-41b0-a1a1-b9497111567e" />
 
 A simple Windows GUI tool to automatically download Steam Workshop items using **SteamCMD**.
 
